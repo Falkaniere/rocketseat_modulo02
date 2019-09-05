@@ -3,7 +3,7 @@ import User from './app/models/User';
 
 const routes = new Router();
 
-routes.post('/', async (req, res) => {
+routes.get('/', async (req, res) => {
   const user = await User.create({
     name: 'diego fernandes',
     email: 'diego@rocketseat',
